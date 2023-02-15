@@ -1,0 +1,136 @@
+id,name,group
+111,MŠ celodenná výchova a vzdelávanie,
+112,MŠ poldenná výchova a vzdelávanie,
+115,MŠ - ZŠ s MŠ,
+116,MŠ - ZŠ s MŠ I.stupeň,
+211,Základná škola,zs
+213,ZŠ internátna,zs
+221,ZŠ I. stupeň,zs
+223,ZŠ I.stupeň internátna,zs
+231,ZŠ II. stupeň,zs
+233,ZŠ II.stupeň internátna,zs
+250,Základná umelecká škola,
+315,Stredisko praktického vyučovania,
+317,Stredisko odbornej praxe,
+321,Gymnázium,gym
+331,Hudobné a dramatické konzervatórium,
+332,Tanečné konzervatórium,
+341,Stredná športová škola,ss
+410,Stredná odborná škola,ss5
+416,Stredná priemyselná škola,ss
+443,Dopravná akadémia,ss
+451,Obchodná akadémia,ss
+452,Hotelová akadémia,ss5
+473,Škola umeleckého priemyslu,ss
+482,Stredná pedagogická škola,ss
+483,Pedagogická a kultúrna akadémia,ss
+484,Pedagogická a sociálna akadémia,ss
+487,Stredná zdravotnícka škola,ss
+491,Policajná stredná odborná škola,
+492,Stredná škola požiarnej ochrany,
+49J,Technická akadémia,ss
+500,Praktická škola pre žiakov s autizmom,
+501,Praktická škola,
+502,Praktická škola pre žiakov so sluchovým postihnutím,
+503,Praktická škola žiakov so zrakovým postihnutím,
+504,Praktická škola pre žiakov s narušenou komunikačnou schopnosťou,
+505,Praktická škola pre žiakov s telesným postihnutím,
+510,ŠMŠ pre deti s autizmom,
+511,Špeciálna materská škola,
+512,ŠMŠ pre deti so sluchovým postihnutím,
+513,ŠMŠ pre deti so zrakovým postihnutím,
+514,ŠMŠ pre deti s narušenou komunikačnou schopnosťou,
+515,ŠMŠ pre deti s telesným postihnutím,
+516,ŠMŠ pre deti s viacnásobným postihnutím,
+517,MŠ pri zdravotníckom zariadení,
+518,ŠMŠ pri špeciálnom výchovnom zariadení,
+51N,MŠ pre deti s nadaním,
+520,ZŠ pre žiakov s autizmom,zs
+522,ZŠ pre žiakov so sluchovým postihnutím,zs
+523,ZŠ pre žiakov so zrakovým postihnutím,zs
+524,ZŠ pre žiakov s narušenou komunikačnou schopnosťou,zs
+525,ZŠ pre žiakov s telesným postihnutím,zs
+527,ZŠ pri zdravotníckom zariadení,zs
+528,ZŠ pri špeciálnom výchovnom zariadení,zs
+529,ZŠ pre žiakov s poruchou učenia,zs
+52N,ZŠ pre žiakov s nadaním,zs
+530,ŠZŠ pre žiakov s autizmom,zs10
+531,Špeciálna základná škola,zs10
+532,ŠZŠ pre žiakov so sluchovým postihnutím,zs10
+533,ŠZŠ pre žiakov so zrakovým postihnutím,zs10
+534,ŠZŠ pre žiakov s narušenou komunikačnou schopnosťou,zs10
+535,ŠZŠ pre žiakov s telesným postihnutím,zs10
+537,ŠZŠ pri zdravotníckom zariaden,zs10
+538,ŠZŠ pri špeciálnom výchovnom zariadení,zs10
+561,Odborné učilište,ou
+562,OU pre žiakov so sluchovým postihnutím,ou
+563,OU pre žiakov so zrakovým postihnutím,ou
+565,OU pre žiakov s telesným postihnutím,ou
+568,OU pri špec. výchov. zariadení,ou
+572,Gymnázium pre žiakov so sluchovým postihnutím,gym
+573,Gymnázium pre žiakov zrakovým postihnutím,gym
+575,Gymnázium pre žiakov s telesným postihnutím,gym
+57N,Gymnázium pre žiakov s nadaním,gym
+582,SOŠ pre žiakov so sluchovým postihnutím,ss5
+583,SOŠ pre žiakov so zrakovým postihnutím,ss5
+585,SOŠ pre žiakov s telesným postihnutím,ss5
+588,SOŠ pri špeciálnom výchovnom zariadení,ss5
+593,Konzervatórium pre žiakov so zrakovým postihnutím,
+600,Praktická škola pre žiakov s autizmom internátna,
+601,Praktická škola internátna,
+602,Praktická škola pre žiakov so sluchovým postihnutím internátna,
+603,Praktická škola pre žiakov so zrakovým postihnutém internátna,
+604,Praktická škola pre žiakov s narušenou komunikačnou schopnosťou internátna,
+605,Prakt.škola pre žiakov s telesným postihnutím internátna,
+610,ŠMŠ pre deti s autizmom internátna,
+611,Špec.materská škola internátna,
+612,ŠMŠ pre deti so sluchovým postihnutím internátna,
+613,ŠMŠ pre deti so zrakovým postihnutím internátna,
+614,ŠMŠ pre deti s narušenou komunikačnou schopnosťou internátna,
+615,ŠMŠ pre deti s telesným postihnutím internátna,
+616,ŠMŠ pre deti s viacnásobným postihnutím internátna,
+622,ZŠ pre žiakov so sluchovým postihnutím internátna,zs
+623,ZŠ pre žiakov so zrakovým postihnutím internátna,zs
+624,ZŠ pre žiakov s narušenou komunikačnou schopnosťou internátna,zs
+625,ZŠ pre žiakov stelesným postihnutím internátna,zs
+62N,ZŠ pre žiakov s nadaním internátna,zs
+630,ŠZŠ pre žiakov s autizmom internátna,zs10
+631,Špeciálna základná škola internátna,zs10
+632,ŠZŠ pre žiakov so sluchovým postihnutím internátna,zs10
+633,ŠZŠ pre žiakov so zrakovým postihnutím internátna,zs10
+634,ŠZŠ pre žiakov s narušenou komunikačnou schopnosťou internátna,zs10
+635,ŠZŠ pre žiakov s telesným postihnutím internátna,zs10
+636,ŠZŠ pre hluchoslepých internátna,zs10
+661,Odborné učilište internátne,ou
+662,OU pre žiakov sluchovo postihnutých internátne,ou
+663,OU pre žiakov so zrakovým postihnutím internátne,ou
+665,OU pre žiakov s telesným postihnutím internátne,ou
+672,Gymnázium pre sluchovo postihnutých internátne,gym
+673,Gymnázium pre žiakov so zrakovým postihnutím internátne,gym
+675,Gymnázium pre žiakov s telesným postihnutím internátne,gym
+682,SOŠ pre  žiakov so sluchovým postihnutím internátna,ss5
+683,SOŠ pre žiakov so zrakovým postihnutím internátna,ss5
+685,SOŠ pre žiakov s telesným postihnutím internátna,ss5
+693,Konzervatórium pre zrakovo postihnutých internátne,
+813,Jazyková škola,
+821,Škola v prírode,
+831,Centrum voľného času,
+841,Školský klub detí,
+842,Školský klub detí pri špeciálnej škole,
+844,Školský internát,
+845,Školský internát pri špeciálnej škole,
+846,Školský klub detí pri zdravotníckom zariadení,
+852,Reedukačné centrum,
+855,Liečebno-výchovné sanatórium,
+856,Diagnostické centrum,
+872,Centrum poradenstva a prevencie,
+873,Špeciálne centrum poradenstva a prevencie,
+931,Školská jedáleň/výdajňa ŠJ pri MŠ,
+932,Školská jedáleň/výdajňa ŠJ pri ŠI,
+934,Školská jedáleň/verejné stravovanie,
+935,Školská jedáleň/výdajňa ŠJ pri ZŠ,
+936,Školská jedáleň/výdajňa ŠJ pri SŠ,
+938,Školská jedáleň/výdajňa ŠJ,
+941,Školské hospodárstvo,
+942,Stredisko služieb škole,
+949,Iné účelové zariadenie,
