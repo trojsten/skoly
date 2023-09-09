@@ -1,6 +1,6 @@
 import os
 
-from skoly import types, utils
+from skoly import utils, types
 
 if __name__ == '__main__':
     os.makedirs("data", exist_ok=True)
