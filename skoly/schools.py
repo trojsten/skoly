@@ -11,7 +11,6 @@ DATASOURCE = "https://crinfo.iedu.sk/RISPortal/register/ExportCSV?id=1"
 class School:
     eduid: str  # EDUID
     id: str  # KODSKO
-    official_type: str  # TypSaSZKod
     official_name: str  # Nazov
     official_short: str  # NazovSkrateny
     official_address: str
@@ -57,7 +56,6 @@ def load_from_official(file: typing.IO, types: TypeDict) -> SchoolDict:
         schools[row["EDUID"]] = School(
             row["EDUID"],
             row["KODSKO"],
-            row["TypSaSZKod"],
             row["Nazov"],
             row["NazovSkrateny"],
             make_address(row),
@@ -74,7 +72,6 @@ def load_from_ours(file: typing.IO) -> SchoolDict:
         schools[row["eduid"]] = School(
             row["eduid"],
             row["id"],
-            row["official_type"],
             row["official_name"],
             row["official_short"],
             row["official_address"],
@@ -95,12 +92,13 @@ def merge(ours: SchoolDict, official: SchoolDict) -> SchoolDict:
         if of.eduid in ours:
             of.our_name = ours[of.eduid].our_name
             of.our_short = ours[of.eduid].our_short
+            of.our_years = ours[of.eduid].our_years
         merged[of.eduid] = of
     return merged
 
 
 def write_to_ours(data: SchoolDict, file: typing.IO):
-    writer = csv.DictWriter(file, fieldnames=["eduid", "id", "official_type", "official_name", "official_short",
+    writer = csv.DictWriter(file, fieldnames=["eduid", "id", "official_name", "official_short",
                                               "official_address", "official_years", "our_name", "our_short",
                                               "our_years"])
     writer.writeheader()
@@ -110,7 +108,6 @@ def write_to_ours(data: SchoolDict, file: typing.IO):
         writer.writerow({
             "eduid": school.eduid,
             "id": school.id,
-            "official_type": school.official_type,
             "official_name": school.official_name,
             "official_short": school.official_short,
             "official_address": school.official_address,
