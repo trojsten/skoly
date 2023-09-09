@@ -96,38 +96,57 @@ def merge(ours: SchoolDict, official: SchoolDict) -> SchoolDict:
 
 
 def write_to_ours(data: SchoolDict, file: typing.IO):
-    writer = csv.DictWriter(file, fieldnames=["eduid", "id", "official_name", "official_short",
-                                              "official_address", "official_years", "our_name", "our_short",
-                                              "our_years"])
+    writer = csv.DictWriter(
+        file,
+        fieldnames=[
+            "eduid",
+            "id",
+            "official_name",
+            "official_short",
+            "official_address",
+            "official_years",
+            "our_name",
+            "our_short",
+            "our_years",
+        ],
+    )
     writer.writeheader()
 
     rows = sorted(list(data.values()), key=lambda t: t.id)
     for school in rows:
-        writer.writerow({
-            "eduid": school.eduid,
-            "id": school.id,
-            "official_name": school.official_name,
-            "official_short": school.official_short,
-            "official_address": school.official_address,
-            "official_years": ",".join(school.official_years) if school.official_years else "",
-            "our_name": school.our_name,
-            "our_short": school.our_short,
-            "our_years": ",".join(school.our_years) if school.our_years else ""
-        })
+        writer.writerow(
+            {
+                "eduid": school.eduid,
+                "id": school.id,
+                "official_name": school.official_name,
+                "official_short": school.official_short,
+                "official_address": school.official_address,
+                "official_years": ",".join(school.official_years)
+                if school.official_years
+                else "",
+                "our_name": school.our_name,
+                "our_short": school.our_short,
+                "our_years": ",".join(school.our_years) if school.our_years else "",
+            }
+        )
 
 
 def write_to_final(data: SchoolDict, file: typing.IO):
-    writer = csv.DictWriter(file, fieldnames=["eduid", "id", "name", "short", "address", "years"])
+    writer = csv.DictWriter(
+        file, fieldnames=["eduid", "id", "name", "short", "address", "years"]
+    )
     writer.writeheader()
 
     rows = sorted(list(data.values()), key=lambda t: t.id)
     for school in rows:
         years = school.our_years or school.official_years
-        writer.writerow({
-            "eduid": school.eduid,
-            "id": school.id,
-            "name": school.our_name or school.official_name,
-            "short": school.our_short or school.official_short,
-            "address": school.official_address,
-            "years": ",".join(years) if years else "",
-        })
+        writer.writerow(
+            {
+                "eduid": school.eduid,
+                "id": school.id,
+                "name": school.our_name or school.official_name,
+                "short": school.our_short or school.official_short,
+                "address": school.official_address,
+                "years": ",".join(years) if years else "",
+            }
+        )

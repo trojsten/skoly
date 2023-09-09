@@ -1,16 +1,15 @@
 import csv
 import typing
 from collections import defaultdict
-from dataclasses import dataclass
 
-from skoly.schools import SchoolDict
 
 DATASOURCE = "https://crinfo.iedu.sk/RISPortal/register/ExportCSV?id=3"
 
 
 ProgrammeMeta = dict[str, set[str]]
 
-def _get_type(row: dict) -> str|None:
+
+def _get_type(row: dict) -> str | None:
     type = None
     stupen = row["StupenVzdelaniaSKOV"]
     length = row["DlzkaStudiaKod"]

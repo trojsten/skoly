@@ -16,5 +16,5 @@ main.add_command(update_programmes)
 main.add_command(update_schools)
 main.add_command(update_types)
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

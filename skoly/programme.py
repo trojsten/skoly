@@ -10,7 +10,9 @@ DATASOURCE = "https://crinfo.iedu.sk/RISPortal/register/ExportCSV?id=4"
 ProgrammeDict = dict[str, set[str]]
 
 
-def load_from_official(file: typing.IO, schools: SchoolDict, meta: ProgrammeMeta) -> ProgrammeDict:
+def load_from_official(
+    file: typing.IO, schools: SchoolDict, meta: ProgrammeMeta
+) -> ProgrammeDict:
     programmes = defaultdict(lambda: set())
     reader = csv.DictReader(file, delimiter=";")
 
