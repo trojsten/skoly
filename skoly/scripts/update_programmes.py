@@ -1,5 +1,3 @@
-from pprint import pprint
-
 import click
 
 from skoly import utils, programme_metadata, schools, programme
