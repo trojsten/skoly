@@ -75,12 +75,10 @@ def load_from_ours(file: typing.IO) -> SchoolDict:
             row["official_name"],
             row["official_short"],
             row["official_address"],
-            set(),
-            # set(row["official_years"].split(",")) if row["official_years"] else None,
+            set(row["official_years"].split(",")) if row["official_years"] else None,
             row["our_name"],
             row["our_short"],
-            set(),
-            # set(row["our_years"].split(",")) if row["our_years"] else None,
+            set(row["our_years"].split(",")) if row["our_years"] else None,
         )
 
     return schools
