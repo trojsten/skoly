@@ -14,6 +14,7 @@ class School:
     official_name: str  # Nazov
     official_short: str  # NazovSkrateny
     official_address: str
+    official_region: str  # Kraj
     official_years: set[str] | None = None
     our_name: str = ""
     our_short: str = ""
@@ -59,6 +60,7 @@ def load_from_official(file: typing.IO, types: TypeDict) -> SchoolDict:
             row["Nazov"],
             row["NazovSkrateny"],
             make_address(row),
+            row["Kraj"],
         )
 
     return schools
@@ -75,6 +77,7 @@ def load_from_ours(file: typing.IO) -> SchoolDict:
             row["official_name"],
             row["official_short"],
             row["official_address"],
+            row["official_region"],
             set(row["official_years"].split(",")) if row["official_years"] else None,
             row["our_name"],
             row["our_short"],
@@ -104,6 +107,7 @@ def write_to_ours(data: SchoolDict, file: typing.IO):
             "official_name",
             "official_short",
             "official_address",
+            "official_region",
             "official_years",
             "our_name",
             "our_short",
@@ -121,6 +125,7 @@ def write_to_ours(data: SchoolDict, file: typing.IO):
                 "official_name": school.official_name,
                 "official_short": school.official_short,
                 "official_address": school.official_address,
+                "official_region": school.official_region,
                 "official_years": ",".join(school.official_years)
                 if school.official_years
                 else "",
@@ -133,7 +138,7 @@ def write_to_ours(data: SchoolDict, file: typing.IO):
 
 def write_to_final(data: SchoolDict, file: typing.IO):
     writer = csv.DictWriter(
-        file, fieldnames=["eduid", "id", "name", "short", "address", "years"]
+        file, fieldnames=["eduid", "id", "name", "short", "address", "region", "years"]
     )
     writer.writeheader()
 
@@ -147,6 +152,7 @@ def write_to_final(data: SchoolDict, file: typing.IO):
                 "name": school.our_name or school.official_name,
                 "short": school.our_short or school.official_short,
                 "address": school.official_address,
+                "region": school.official_region,
                 "years": ",".join(years) if years else "",
             }
         )
