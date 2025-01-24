@@ -121,12 +121,14 @@ def write_to_ours(data: SchoolDict, file: typing.IO):
                 "official_name": school.official_name,
                 "official_short": school.official_short,
                 "official_address": school.official_address,
-                "official_years": ",".join(school.official_years)
+                "official_years": ",".join(sorted(school.official_years))
                 if school.official_years
                 else "",
                 "our_name": school.our_name,
                 "our_short": school.our_short,
-                "our_years": ",".join(school.our_years) if school.our_years else "",
+                "our_years": ",".join(sorted(school.our_years))
+                if school.our_years
+                else "",
             }
         )
 
