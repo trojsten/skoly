@@ -36,6 +36,7 @@ Typy škôl v oficiánych dátach sa nedajú jednoducho napárovať na typy, kto
 jednoduchý systém:
 
 Typ školy sa skladá z dvoch častí:
+
 - skupina škôl (`zs`, `ss`, `gym`)
 - dĺžka štúdia v rokoch
 
@@ -56,14 +57,13 @@ V projekte sa používajú rôzne reprezentácie, ktoré reprezentujú rôzne ko
 ## Aktualizácia dát
 
 ```shell
-pipenv install
-pipenv run python cli.py update-types
-pipenv run python cli.py update-schools
+uv run cli.py update-types
+uv run cli.py update-schools
 # teraz možno aktualizovať data/schools.csv
 # our_name, our_short pre nové / premenované školy
 
-pipenv run python cli.py update-programmes
-pipenv run python cli.py finalize
+uv run cli.py update-programmes
+uv run cli.py finalize
 ```
 
 [^1]: zatiaľ používame oficiálne dáta, eventuálne budeme generovať vlastné
