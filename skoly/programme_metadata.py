@@ -13,13 +13,14 @@ def _get_type(row: dict) -> str | None:
     type = None
     stupen = row["StupenVzdelaniaSKOV"]
     length = row["DlzkaStudiaKod"]
+    odbor = row["OdborVzdelaniaSKOV"]
 
-    if "gymnázium" in row["OdborVzdelaniaSKOV"]:
+    if "gymnázium" in odbor:
         type = "gym"
+    elif stupen == "primárne vzdelanie" or "základná škola" in odbor:
+        type = "zs"
     elif "stredné" in stupen:
         type = "ss"
-    elif stupen == "primárne vzdelanie":
-        type = "zs"
 
     if type:
         if length:
